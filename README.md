@@ -85,7 +85,22 @@ Este protótipo conceptual foi desenhado para que os agentes (Detetive, Advogado
 │   └── ata_final.md
 └── README.md
 ```
+---
+## 🛠️ O que precisas de fazer agora para testar:
+Faz download do repositório para o teu computador.
 
+Fazer download dos PDFs ou .txt das leis dos links: Põe dentro da pasta data/leis em .txt (ex: crp.txt) ou um .pdf.
+
+Instalar dependências:
+
+No terminal, corre:
+```bash
+pip install -r requirements.txt
+```
+Correr o Maestro:
+```
+python main.py
+```
 ---
 
 ## ⚠️ Aviso Legal
