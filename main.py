@@ -55,7 +55,8 @@ class TribunalMaestro:
         print("\n🛡️ Defesa:\n", tese_defesa)
 
         # Deliberação
-        deliberacao = self.juiz.deliberar(relatorio, tese_acusacao, tese_defesa, self.contexto_legal)
+        deliberacao_bruta = self.juizes.deliberar(...)
+        deliberacao = deliberacao_bruta.get('realidades', deliberacao_bruta)
 
         # Ata Final
         realidades = {"Rigorosa": "Ver deliberação acima", "Garantista": "...", "Equilibrada": "..."}  # podes parsear melhor
