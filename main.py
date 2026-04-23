@@ -55,13 +55,36 @@ class TribunalMaestro:
         print("\n🛡️ Defesa:\n", tese_defesa)
 
         # Deliberação
-        deliberacao_bruta = self.juizes.deliberar(...)
-        deliberacao = deliberacao_bruta.get('realidades', deliberacao_bruta)
+        # 1. Corrige o nome do objeto de 'self.juizes' para 'self.juiz'
+        deliberacao_bruta = self.juiz.deliberar(
+            analise_detetive=relatorio, 
+            tese_acusacao=tese_acusacao, 
+            tese_defesa=tese_defesa, 
+            contexto_legal=self.contexto_legal
+        )
+        
+        # 2. Extrai o texto da deliberação
+        texto_deliberacao = deliberacao_bruta.get('realidades', '')
+
+        # 3. Prepara o dicionário de realidades que o escrivão espera
+        #    (Aqui podes melhorar o parsing, mas para já isto resolve o KeyError)
+        realidades_para_ata = {
+            "Rigorosa": texto_deliberacao,
+            "Garantista": texto_deliberacao,
+            "Equilibrada": texto_deliberacao
+        }
 
         # Ata Final
-        realidades = {"Rigorosa": "Ver deliberação acima", "Garantista": "...", "Equilibrada": "..."}  # podes parsear melhor
-        traducoes = self.escrivao.traduzir_para_cidadao(realidades)  # ajusta conforme necessário
-        print(self.escrivao.redigir_ata_final(self.caso_completo, deliberacao, traducoes, self.escrivao.calcular_custas_estimadas()))
+        # 4. Usa as 'realidades_para_ata' para traduzir e redigir a ata
+        traducoes = self.escrivao.traduzir_para_cidadao(realidades_para_ata)
+        custas = self.escrivao.calcular_custas_estimadas()
+        
+        print(self.escrivao.redigir_ata_final(
+            self.caso_completo, 
+            realidades_para_ata,  # <-- Passa o dicionário, não a string
+            traducoes, 
+            custas
+        ))
 
 if __name__ == "__main__":
     tribunal = TribunalMaestro()
