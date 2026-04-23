@@ -1,6 +1,7 @@
 import os
 from langchain_community.document_loaders import TextLoader, PyPDFLoader
-from langchain.text_splitter import CharacterTextSplitter
+# A nova forma de importar o splitter:
+from langchain_text_splitters import CharacterTextSplitter 
 
 def carregar_documentos(pasta="data/leis/"):
     documentos_totais = []
