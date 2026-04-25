@@ -42,6 +42,8 @@ Utilizador descreve o caso
 
 ## Podes correr apenas o interface.html
 (faz doanload do ficheiro: https://github.com/F-i-Red/Tribunal_IA_Portugal/blob/main/interface.html)
+### 1. Requisitos
+- Chave GRATUITA do OpenRouter (https://openrouter.ai/)
 
 ou
 
