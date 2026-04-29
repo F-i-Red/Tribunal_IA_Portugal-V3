@@ -1,0 +1,31 @@
+EXEMPLO DE CASO PARA TESTE
+==========================
+
+Cole o texto abaixo no modo interativo do main.py:
+
+---
+
+O arguido Manuel Ferreira Santos, residente em Rua das Flores nº 45, 3º Esq.,
+1200-150 Lisboa, NIF 123456789, foi detido em flagrante delito no dia
+15 de março de 2024, pelas 23h30, na Avenida da Liberdade, Lisboa,
+quando tentava arrombar a porta de um estabelecimento comercial.
+
+O arguido foi visto por duas testemunhas: Maria Conceição Lopes,
+residente na Rua Augusta, e Pedro Miguel Ribeiro, funcionário de
+segurança do estabelecimento vizinho.
+
+O arguido tem antecedentes criminais por furto qualificado (processo
+1234/23.0001 do Tribunal Judicial da Comarca de Lisboa).
+
+Contacto do advogado de defesa: Dr. Ana Beatriz Costa,
+email: ana.costa@advogados.pt, telefone 912345678.
+
+---
+
+Este caso de teste permite verificar:
+✅ Anonimização de NIF
+✅ Anonimização de moradas
+✅ Anonimização de nomes de pessoas
+✅ Anonimização de contactos
+✅ Anonimização de números de processo
+✅ Anonimização de tribunais
