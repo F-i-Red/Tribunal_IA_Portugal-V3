@@ -1,4 +1,4 @@
-Simulação com LLM grátis, para teste. O resultado fica aquém de uma LLM paga.
+Simulação com LLM grátis, para teste. O resultado fica aquém (e com cortes) de uma LLM paga.
 
 ══════════════════════════════════════════════════════════════════════
 ATA DE SIMULAÇÃO JUDICIAL — TRIBUNAL IA PORTUGAL
