@@ -1,11 +1,14 @@
+"""
+Utilitários do Tribunal IA Portugal.
+"""
+from .anonymizer import anonymize_text, Entity
+from .brain import TribunalBrain, get_brain, reset_brain
 from .config import Config, ConfigError, get_config
 from .logger import TribunalLogger, get_logger
-from .brain import TribunalBrain, LLMResponse, get_brain
-from .anonymizer import PortugueseLegalAnonymizer, Entity, anonymize_text
 
 __all__ = [
+    "anonymize_text", "Entity",
+    "TribunalBrain", "get_brain", "reset_brain",
     "Config", "ConfigError", "get_config",
     "TribunalLogger", "get_logger",
-    "TribunalBrain", "LLMResponse", "get_brain",
-    "PortugueseLegalAnonymizer", "Entity", "anonymize_text",
 ]
