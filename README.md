@@ -169,12 +169,18 @@ Tribunal_IA_Portugal-V2/
 │   └── jurisprudencia/   # Jurisprudência do STJ (adicionar aqui)
 ├── output_atas/          # Atas geradas automaticamente
 ├── logs/                 # Logs estruturados em JSON
+|
 ├── app.py                # Interface Streamlit refatorada
 ├── main.py               # CLI principal
 ├── verificar.py          # Verificador de sistema
 ├── gerir_base.py         # Gestor da base de conhecimento
 ├── requirements.txt
 ├── .env.example
+├── .env
+├── license
+├── .gitignore
+├── iniciar_interface.bat
+├── iniciar_interface.sh
 └── README.md
 ```
 
