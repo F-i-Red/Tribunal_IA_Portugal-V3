@@ -103,7 +103,7 @@ iniciar_interface.bat
 
 Acede a `http://localhost:8501` no teu navegador.
 
-### Linha de Comandos (CLI)
+### Linha de Comandos (CMD)
 
 ```bash
 # Modo normal (com instrução interativa)
@@ -140,24 +140,29 @@ python gerir_base.py --recarregar
 Tribunal_IA_Portugal-V2/
 ├── src/
 │   ├── agents/           # Placeholder para futuros agentes especializados
+│   │   └── __init__.py
 │   ├── cache/            # Sistema de cache semântico (novo)
 │   │   └── __init__.py   # SemanticCache com persistência em disco
 │   ├── pipeline/
+│   │   ├── __init__.py
 │   │   ├── case_processor.py   # Pipeline principal (RAG + paralelismo)
 │   │   └── instancias.py       # Definição das 7 instâncias judiciais
 │   ├── rag/
+│   │   ├── __init__.py
 │   │   ├── motor.py      # Motor RAG com BM25 melhorado e persistência
 │   │   └── validador.py  # Validação de citações jurídicas
 │   ├── ui/               # Placeholder para componentes UI futuros
 │   └── utils/
+│       ├── __init__.py
 │       ├── anonymizer.py # Anonimização RGPD (regex + contexto)
 │       ├── brain.py      # Interface com OpenRouter + circuit breaker + cache
 │       ├── config.py     # Configuração centralizada (Pydantic-style)
 │       └── logger.py     # Logger estruturado em JSON + tracking de custos
 ├── tests/
+│   ├── __init__.py
 │   ├── test_anonymizer.py
-│   ├── test_cache.py     # (novo)
-│   └── test_rag.py       # (novo)
+│   ├── test_cache.py
+│   └── test_rag.py
 ├── data/
 │   ├── leis/             # Textos de lei (Constituição, etc.)
 │   ├── precedentes/      # Precedentes judiciais (adicionar aqui)
