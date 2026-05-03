@@ -1,1 +1,3 @@
-"""Agentes do Tribunal IA Portugal."""
+"""
+Agentes do Tribunal IA Portugal.
+"""
